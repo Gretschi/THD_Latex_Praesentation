@@ -12,9 +12,9 @@ dann die offiziellen Fakultätsfarbe.
 
 ## Beispiel
 
-![Altes Design](thdeg.png "Altes Design")
-
-![Neues Design](thdeg2020.png "Design von 2020")
+| Altes Design | Neues Design |
+| ------------ | ------------ |
+| ![Altes Design](thdeg.png "Altes Design") | ![Neues Design](thdeg2020.png "Design von 2020") |
 
 ---
 © 2022 [Andreas Fischer](mailto:andreas.fischer@th-deg.de)
