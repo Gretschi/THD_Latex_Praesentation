@@ -64,7 +64,7 @@
 \setbeamercolor{itemize subitem}{fg=THD-BLAU}
 
 \setbeamercolor{normal text}{fg=black,bg=white} 
-\setbeamercolor{alerted text}{fg=FacultyColor} 
+\setbeamercolor{alerted text}{fg=red} 
 \setbeamercolor{example text}{fg=black} 
 \setbeamercolor{structure}{fg=THD-BLAU} 
 
@@ -98,7 +98,7 @@
 \begin{beamercolorbox}{title}
 	\usebeamerfont{title}
 	\begin{tikzpicture}
-	\node[anchor=base west] (title) at (0,0) {\inserttitle};
+	\node[anchor=base west,align=left] (title) at (0,0) {\inserttitle};
 	\begin{scope}[on background layer]
 		\filldraw[color=white] ([shift={(-.1,.1)}] title.south west) -- ([shift={(.3,0)}] title.south east) -- (title.north east) -- ([shift={(0,-.1)}] title.north west) -- cycle;
 	\end{scope}
@@ -139,9 +139,15 @@
   \end{minipage}
   \hspace{.05\textwidth}
   \begin{minipage}{.7\textwidth}
+  \ifnum\c@framenumber=1
+    \begin{beamercolorbox}[center]{footline}
+	    \textls{\insertauthor}
+    \end{beamercolorbox}
+  \else
     \begin{beamercolorbox}[center]{footline}
 	    \textls{\insertshortauthor, \insertshorttitle, \insertdate}
     \end{beamercolorbox}
+  \fi%
   \end{minipage}
   \begin{minipage}{.45cm}
   \ifnum\c@framenumber=1
